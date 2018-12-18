@@ -1,0 +1,18 @@
+﻿@using MultiProjectTest.Entities
+@model IEnumerable<TestModel>
+
+<table class="table table-responsive table-striped" >
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+        </tr>
+    }
+
+</table>
